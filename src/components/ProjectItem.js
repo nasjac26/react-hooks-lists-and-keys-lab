@@ -10,8 +10,13 @@ function ProjectItem({ name, about, technologies }) {
       <h3>{name}</h3>
       <p>{about}</p>
       <div className="technologies">
-        <span {technologies} />
-        
+        <span key={technologies[0]}
+        >{technologies[0]}</span>
+        <span key={technologies[1]}
+        >{technologies[1]}</span>
+        <span key={technologies[2]}
+        >{technologies[2]}</span>
+
       </div>
     </div>
   );

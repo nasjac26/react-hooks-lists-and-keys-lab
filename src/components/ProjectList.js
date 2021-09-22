@@ -1,5 +1,4 @@
 import React from "react";
-import user from "../data/user";
 import ProjectItem from "./ProjectItem";
 
 function ProjectList({ projects }) {
@@ -9,7 +8,7 @@ function ProjectList({ projects }) {
       <h2>My Projects</h2>
       <div id="project-list">
         {projects.map(project => 
-          <ProjectItem name={projects.name} about={projects.about} technologies={projects.technologies}/>
+          <ProjectItem name={project.name} about={project.about} technologies={project.technologies}/>
         )}
         </div>
     </div>
